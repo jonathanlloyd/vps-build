@@ -3,15 +3,11 @@
 
 Vagrant.configure("2") do |config|
   # Base Image
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "bento/ubuntu-22.04"
   config.vm.box_check_update = false
 
-
   # Networking
-  config.vm.network "private_network", ip: "192.168.33.10"
-
-  # Disable shared folders
-  #config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.network "private_network", ip: "192.168.56.101"
 
   # Tweak virtualbox
   config.vm.provider :virtualbox do |vb|
@@ -20,5 +16,5 @@ Vagrant.configure("2") do |config|
   end
 
   # Provisioning
-  config.vm.provision "shell", path: "provision.sh"
+  # config.vm.provision "shell", path: "provision.sh"
 end
