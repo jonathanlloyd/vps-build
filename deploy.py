@@ -251,7 +251,7 @@ if __name__ == '__main__':
         conn,
         cron_user=SECRETS['SUDO_USER'],
         cron_schedule='0 */6 * * *',
-        commit='5835b2c7d04399f29e151cb4a5ce6f7e52722de2',
+        commit='95a5ed6aefb26fe4bf9b0d47391375c377d310b3',
         consumer_key=SECRETS['TWITTER_CONSUMER_KEY'],
         consumer_secret=SECRETS['TWITTER_CONSUMER_SECRET'],
         access_key=SECRETS['TWITTER_ACCESS_KEY'],
